@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealer Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <!-- header section -->
+    <header class="bg-[#d2583e] py-3 sm:block hidden">
+        <div class="container mx-auto max-w-5xl">
+            <div class="flex items-center justify-between md:flex-row  sm:flex-col ">
+                <div class="flex items-center ">
+                    <div class="text-white">
+                        <i class="fa-solid fa-phone text-sm"></i>
+                        <span class="text-sm">+9238384</span>
+                    </div>
+                    <div class="ml-8  text-white flex items-center">
+                        <i class="fa-solid fa-envelope text-sm"></i>
+                        <span class="text-sm ml-2">programmerhero6@gmail.com</span>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa-brands ml-3 text-white text-sm cursor-pointer  fa-facebook"></i>
+                    <i class="fa-brands ml-3 text-white text-sm cursor-pointer fa-twitter"></i>
+                    <i class="fa-brands ml-3 text-white text-sm cursor-pointer fa-google"></i>
+                    <i class="fa-brands ml-3 text-white text-sm cursor-pointer fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- navbar section -->
+    <nav class="bg-[#2c3e50] relative">
+        <div class="container mx-auto max-w-6xl py-2">
+            <div class="flex items-center justify-between lg:mx-0 mx-10">
+                <div>
+                    <img src="https://autoimage.templines.org/wp-content/themes/autoimage/images/logo-w.png"
+                        class="w-100" alt="">
+                </div>
+                <i id="show" class="fa-solid fa-bars text-white text-lg md:hidden block cursor-pointer" onclick="showNavbar()"></i>
+                <div id="navbar" class=" md:flex md:top-0 md:left-0 md:right-0 md:relative absolute hidden top-16 z-10 bg-[#2c3e50] w-full right-0 mx-auto justify-end left-0 md:w-full  max-w-6xl">
+                    <a href="index.html" class="text-lg md:py-0 py-2 font-semibold md:flex block mx-2 text-white hover:text-[#d2583e]">Home</a>
+                    <a href="index.html"
+                        class="text-lg font-semibold md:flex block md:py-0 py-2 mx-2 text-white hover:text-[#d2583e]">Categories</a>
+                    <a href="index.html" class="text-lg md:py-0 py-2 font-semibold md:flex block mx-2 text-white hover:text-[#d2583e]">Shop</a>
+                    <a href="index.html" class="text-lg md:py-0 py-2 font-semibold md:flex block mx-2 text-white hover:text-[#d2583e]">Rent</a>
+                    <a href="index.html" class="text-lg md:py-0 py-2 font-semibold md:flex block mx-2 text-white hover:text-[#d2583e]">About</a>
+                    <a href="index.html" class="text-lg md:py-0 py-2 font-semibold md:flex block mx-2 text-white hover:text-[#d2583e]">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section>
+        <div class="owl-carousel owl-theme hero-section relative cursor-move ">
+            <div class="item">
+                <div class="flex items-center min-h-max py-28" style="background:rgba(0,0,0,0.4) url(https://autoimage.templines.org/wp-content/uploads/2018/04/2018_lexus_ls_500_4k_2-1280x720-640x362.jpg);background-repeat: no-repeat;width: 100%;
+                        background-position:center;background-size:cover;background-blend-mode: darken;">
+                    <div class="container mx-auto max-w-6xl">
+                        <span class="text-white text-md">---</span>
+                        <span class="uppercase text-white text-md font-700">Get your Dream car</span>
+                        <h1 class="text-7xl text-white font-semibold my-3">AUDI R8 Marine </h1>
+                        <sup class="text-white text-2xl">$</sup>
+                        <span class="text-7xl text-white font-bold">199</span>
+                        <h1 class="text-md uppercase tracking-[.5em] text-semibold text-white ml-5">Monthly</h1>
+
+                        <button
+                            class="bg-[#2c3e50] px-5 py-2 text-lg text-white text-semibold hover:bg-[#d2583e] my-3  ">TEST
+                            DRIVE
+                            TODAY</button>
+                    </div>
+                </div>
+                <button class="absolute top-2/4 left-0 bg-[#2c3e50]/50 hover:bg-[#2c3e50] px-4 py-2"><i
+                        class="fa-solid fa-arrow-left text-white"></i></button>
+                <button class="absolute top-2/4 right-0 bg-[#2c3e50]/50 hover:bg-[#2c3e50] px-4 py-2"><i
+                        class="fa-solid fa-arrow-right text-white"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- quick search -->
+    <section class="bg-[#d2583e] p-8 text-center">
+        <h1 class="text-3xl font-semibold text-white">
+            Quick Vehicle Search
+        </h1>
+        <h2 class="text-md font-500 my-2 text-white">FROM 600+ BRAND CARS</h2>
+    </section>
+
+    <!-- advantages section -->
+
+    <section class="container mx-auto max-w-6xl my-20">
+        <div class="text-center mb-20">
+            <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/tlogo.png" class="mx-auto" alt="">
+            <h1 class="text-5xl font-semibold my-3">
+                Our Advantages
+            </h1>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 ">
+            <div class="py-16 px-10 bg-gray-100/60 text-center">
+                <div class="bg-white p-3 w-1/4 mx-auto ">
+                    <i class="fa-solid fa-wheelchair-move text-2xl"></i>
+                </div>
+                <h1 class="text-xl font-semibold my-3 ">Lorem Supm</h1>
+                <p class="text-gray-500 text-md font-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Temporibus incidunt deleniti</p>
+            </div>
+            <div class="py-16 px-10 bg-gray-100/20 border-b-2 border-b-black text-center">
+                <div class="bg-[#d2583e] p-3 w-1/4 mx-auto ">
+                    <i class="fa-brands fa-golang text-2xl text-white"></i>
+                </div>
+                <h1 class="text-xl font-semibold my-3 ">Lorem Supm</h1>
+                <p class="text-gray-500 text-md font-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Temporibus incidunt deleniti</p>
+            </div>
+            <div class="py-16 px-10 bg-gray-100/60 text-center">
+                <div class="bg-white p-3 w-1/4 mx-auto ">
+                    <i class="fa-solid fa-screwdriver-wrench text-2xl"></i>
+                </div>
+                <h1 class="text-xl font-semibold my-3 ">Lorem Supm</h1>
+                <p class="text-gray-500 text-md font-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Temporibus incidunt deleniti</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- best vehicle cars -->
+    <section class="container mx-auto max-w-6xl my-20">
+        <div class="text-center mb-20">
+            <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/tlogo.png" class="mx-auto" alt="">
+            <h1 class="text-5xl font-semibold my-3">
+                Best Vehicle Offers
+            </h1>
+        </div>
+
+        <div class="owl-carousel owl-theme best-cars cursor-move ">
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/audi_e_tron_2019_4k-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute top-1 left-0    ">
+                            <span
+                                class=" bg-[#d2583e] py-2 uppercase px-6 cursor-pointer text-white text-md font-semibold ">Rental</span>
+                        </div>
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/mercedes_benz_gle_450_4matic_amg_line_2019_4k-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute top-1 left-0    ">
+                            <span
+                                class=" bg-[#d2583e] py-2 uppercase px-6 cursor-pointer text-white text-md font-semibold ">Reserved</span>
+                        </div>
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/04/2018_lexus_ls_500_4k_2-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/bmw_x5_xdrive40i_2018_4k-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/hyundai_santa_fe_2019_4k-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/hyundai_santa_fe_2019_4k-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/chevrolet_orlando_redline_2018_4k-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Latest vehicle cars -->
+    <section class="container mx-auto max-w-6xl my-20">
+        <div class="text-center mb-20">
+            <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/tlogo.png" class="mx-auto" alt="">
+            <h1 class="text-5xl font-semibold my-3">
+                Latest Vehicle Offers
+            </h1>
+        </div>
+
+        <div class="owl-carousel owl-theme best-cars cursor-move ">
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/audi_e_tron_2019_4k-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute top-1 left-0    ">
+                            <span
+                                class=" bg-[#d2583e] py-2 uppercase px-6 cursor-pointer text-white text-md font-semibold ">Rental</span>
+                        </div>
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/mercedes_benz_gle_450_4matic_amg_line_2019_4k-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute top-1 left-0    ">
+                            <span
+                                class=" bg-[#d2583e] py-2 uppercase px-6 cursor-pointer text-white text-md font-semibold ">Reserved</span>
+                        </div>
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/04/2018_lexus_ls_500_4k_2-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/bmw_x5_xdrive40i_2018_4k-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/hyundai_santa_fe_2019_4k-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/hyundai_santa_fe_2019_4k-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/chevrolet_orlando_redline_2018_4k-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Rental vehicle cars -->
+    <section class="container mx-auto max-w-6xl my-20">
+        <div class="text-center mb-20">
+            <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/tlogo.png" class="mx-auto" alt="">
+            <h1 class="text-5xl font-semibold my-3">
+                Rental Vehicle Offers
+            </h1>
+        </div>
+
+        <div class="owl-carousel owl-theme best-cars cursor-move ">
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/audi_e_tron_2019_4k-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute top-1 left-0    ">
+                            <span
+                                class=" bg-[#d2583e] py-2 uppercase px-6 cursor-pointer text-white text-md font-semibold ">Rental</span>
+                        </div>
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/mercedes_benz_gle_450_4matic_amg_line_2019_4k-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/04/2018_lexus_ls_500_4k_2-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/bmw_x5_xdrive40i_2018_4k-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/hyundai_santa_fe_2019_4k-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/hyundai_santa_fe_2019_4k-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/chevrolet_orlando_redline_2018_4k-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Reserved vehicle cars -->
+    <section class="container mx-auto max-w-6xl my-20">
+        <div class="text-center mb-20">
+            <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/tlogo.png" class="mx-auto" alt="">
+            <h1 class="text-5xl font-semibold my-3">
+                Reserved Vehicle Offers
+            </h1>
+        </div>
+
+        <div class="owl-carousel owl-theme best-cars cursor-move ">
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/audi_e_tron_2019_4k-1280x720-640x362.jpg"
+                            alt="">
+
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/mercedes_benz_gle_450_4matic_amg_line_2019_4k-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute top-1 left-0    ">
+                            <span
+                                class=" bg-[#d2583e] py-2 uppercase px-6 cursor-pointer text-white text-md font-semibold ">Reserved</span>
+                        </div>
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/04/2018_lexus_ls_500_4k_2-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/bmw_x5_xdrive40i_2018_4k-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/hyundai_santa_fe_2019_4k-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/hyundai_santa_fe_2019_4k-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="bg-gray-100/60">
+                    <div class="relative">
+                        <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/chevrolet_orlando_redline_2018_4k-1280x720-640x362.jpg"
+                            alt="">
+                        <div class="absolute bottom-[-10px] left-[40%] sm:left-[35%] right-[50%]  ">
+                            <span
+                                class=" bg-white text-black hover:bg-[#d2583e] py-2 px-6 cursor-pointer hover:text-white text-md font-semibold ">$4000</span>
+                        </div>
+                    </div>
+                    <h1 class="text-center mt-7 mb-5 text-xl font-semibold">Donec elibero</h1>
+                    <div class="flex justify-center space-x-3  pb-4">
+                        <div class="bg-white px-4 py-2 shadow-lg shadow-gray-100 ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">2022</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">1400</span>
+                        </div>
+                        <div class="bg-white p-3 shadow-lg ">
+                            <i class="fa-brands fa-golang text-lg block text-center "></i>
+                            <span class="text-sm">Manual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Our Team -->
+    <section class=" my-20 bg-gray-100/50 p-10">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-20">
+                <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/tlogo.png" class="mx-auto" alt="">
+                <h1 class="text-5xl font-semibold my-3">
+                    Our Sales Team
+                </h1>
+            </div>
+
+            <div class="owl-carousel owl-theme best-cars cursor-move ">
+                <div class="item">
+                    <div class="bg-gray-100/60">
+                        <div class="relative">
+                            <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/t02.jpg" alt="">
+                        </div>
+                        <h1 class="text-center mt-7 text-xl  font-semibold">Donec elibero</h1>
+                        <h1 class="text-center my-5 text-md text-gray-400 font-semibold">Director</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-[#2c3e50] pt-20 pb-10">
+        <div class="container  md:mx-auto mx-20 max-w-6xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
+                <div>
+                    <img src="https://autoimage.templines.org/wp-content/uploads/2018/10/tlogo.png" 
+                        alt="">
+                    <h1 class="text-md font-500 text-white my-3">
+                        Copyright © 2018  Tailwind Theme. <br>
+                        All Rights Reserved.
+                    </h1>
+                </div>
+                <div>
+                    <h1 class="text-lg font-semibold text-white uppercase tracking-[2px]">UseFull Link</h1>
+                    <ul class="mt-5">
+                        <li class="my-2 text-white text-lg font-thin">About us</li>
+                        <li class="my-2 text-white text-lg font-thin">Our Service</li>
+                        <li class="my-2 text-white text-lg font-thin">Information</li>
+                        <li class="my-2 text-white text-lg font-thin">Privacy and Policy</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="text-lg font-semibold text-white uppercase tracking-[2px]">Our Team</h1>
+                    <ul class="mt-5">
+                        <li class="my-2 text-white text-lg font-thin">Support</li>
+                        <li class="my-2 text-white text-lg font-thin">Contacts</li>
+                        <li class="my-2 text-white text-lg font-thin">Typography</li>
+                        <li class="my-2 text-white text-lg font-thin">FAQ</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="text-lg font-semibold text-white uppercase tracking-[2px]">Show Room</h1>
+                    <ul class="mt-5">
+                        <li class="my-2 text-white text-lg font-thin">USA, Auto, King St. 665087</li>
+                        <li class="my-2 text-white text-lg font-thin">Phone.: +7 234 949-58-83</li>
+                        <li class="my-2 text-white text-lg font-thin">E-mail.: info@example.com</li>
+                        <li class="my-2 text-white text-lg font-thin">© 2018 Auto LTD </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('.hero-section').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+        $('.best-cars').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                800: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+
+        function showNavbar(){
+            if( document.getElementById("navbar").classList.contains('hidden') && document.getElementById("show").classList.contains('fa-bars')){
+                document.getElementById("navbar").classList.add("block");
+                document.getElementById("navbar").classList.remove("hidden");
+                document.getElementById("show").classList.add('fa-xmark')
+                document.getElementById("show").classList.remove('fa-bars')
+            }else{
+                document.getElementById("navbar").classList.remove("block");
+                document.getElementById("navbar").classList.add("hidden");
+                document.getElementById("show").classList.remove('fa-xmark')
+                document.getElementById("show").classList.add('fa-bars')
+            }
+         
+        }
+    </script>
+</body>
+
+</html>
+<!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
